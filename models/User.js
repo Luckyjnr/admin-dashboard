@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
   // Role of the user (default: 'user')
   role: {
     type: String,
-    enum: ['user', 'admin'],
+    enum: ['user', 'manager', 'admin'],
     default: 'user',
   },
   // Refresh token for session management
